@@ -11,22 +11,22 @@ namespace FP_Calculator
             Functions
             */
 
-        static int add(int x, int y)
+        static int Add(int x, int y)
         {
             return x + y;
         }
 
-        static int sub(int x, int y)
+        static int Sub(int x, int y)
         {
             return x - y;
         }
 
-        static int multiply(int x, int y)
+        static int Multiply(int x, int y)
         {
             return x * y;
         }
 
-        static int divide(int x, int y)
+        static int Divide(int x, int y)
         {
             return x / y;
         }
@@ -35,7 +35,7 @@ namespace FP_Calculator
         Initalizer 
         */
 
-        static void start()
+        static void Start()
         {
             {
                 Console.Write("What is your x value: ");
@@ -47,16 +47,16 @@ namespace FP_Calculator
                 switch (operation)
                 {
                     case "+":
-                        Console.WriteLine(add(x, y));
+                        Console.WriteLine(Add(x, y));
                         break;
                     case "-":
-                        Console.WriteLine(sub(x, y));
+                        Console.WriteLine(Sub(x, y));
                         break;
                     case "*":
-                        Console.WriteLine(multiply(x, y));
+                        Console.WriteLine(Multiply(x, y));
                         break;
                     case "/":
-                        Console.WriteLine(divide(x, y));
+                        Console.WriteLine(Divide(x, y));
                         break;
                     default:
                         Console.WriteLine("Hey! That's not a number >:(");
@@ -71,7 +71,7 @@ namespace FP_Calculator
         static void Main(string[] args)
         {
             while(true){
-            start();
+            Start();
             }
             
         }
